@@ -90,7 +90,8 @@ class ArticleResource extends Resource
                 ->label('Titolo')
                 ->searchable(),
                 Tables\Columns\TextColumn::make('description')
-                ->label('Descrizione Articolo'),
+                ->label('Descrizione Articolo')
+                ->limit(20),
                 Tables\Columns\TextColumn::make('price')
                 ->label('Prezzo Articolo')
                 ->prefix('€'),
